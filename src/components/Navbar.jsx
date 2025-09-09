@@ -12,10 +12,7 @@ function Navbar() {
                     <a href="/projects" className="custom-button">Projects</a>
                 </li>
                 <li>
-                    <a href="#about" className="custom-button">About</a>
-                </li>
-                <li>
-                    <a href="#contact" className="custom-button">Contact</a>
+                    <a href="/contact" className="custom-button">Contact</a>
                 </li>
             </ul>
         </nav>
