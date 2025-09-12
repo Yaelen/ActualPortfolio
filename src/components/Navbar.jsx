@@ -1,22 +1,44 @@
-import React from 'react';
-import '../index.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../index.css";
 
-function Navbar() {
+export default function Navbar() {
     return (
-        <nav>
-            <ul className={"flex flex-col gap-4 p-4"}>
+        <nav className="fixed top-0 h-screen w-64 animate-fade-in z-50 flex items-center">
+        <ul className="nav-bar flex flex-col gap-4 p-4">
                 <li>
-                    <a href="/" className="custom-button">Home</a>
+                    <NavLink
+                        to="/"
+                        end
+                        className={({ isActive }) =>
+                            `custom-button ${isActive ? "active-button" : ""}`
+                        }
+                    >
+                        Home
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/projects" className="custom-button">Projects</a>
+                    <NavLink
+                        to="/projects"
+                        className={({ isActive }) =>
+                            `custom-button ${isActive ? "active-button" : ""}`
+                        }
+                    >
+                        Projects
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/contact" className="custom-button">Contact</a>
+                    <NavLink
+                        to="/contact"
+                        className={({ isActive }) =>
+                            `custom-button ${isActive ? "active-button" : ""}`
+                        }
+                    >
+                        Contact
+                    </NavLink>
                 </li>
             </ul>
         </nav>
     );
 }
 
-export default Navbar;

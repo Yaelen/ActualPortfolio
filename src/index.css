@@ -32,7 +32,6 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'KhMb', monospace;
-    font-weight: bold;
     overflow-x: hidden;
 }
 body:before{
@@ -112,4 +111,14 @@ body:before{
 .active-button::before {
     opacity: 1;
     left: -20px;
+}
+
+.glass-shine {
+    background: linear-gradient(
+            135deg,
+            rgba(255,255,255,0.15) 0%,
+            rgba(255,255,255,0.05) 50%,
+            rgba(255,255,255,0.15) 100%
+    );
+    backdrop-filter: blur(20px);
 }
