@@ -51,6 +51,22 @@ body:before{
     z-index: 1;
 }
 
+@keyframes page-slide-fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.page-enter {
+    will-change: transform, opacity;
+    animation: page-slide-fade-in-right 550ms ease-out both;
+}
+
 .custom-button {
     position: static;
     width: 20rem;
@@ -111,6 +127,31 @@ body:before{
 .active-button::before {
     opacity: 1;
     left: -20px;
+}
+
+.custom-button-static {
+    position: static;
+    width: 20rem;
+    height: 4rem;
+    padding: 0 2rem;
+    border: 5px solid black;
+    border-radius: 0 25px 0 25px;
+    font-weight: bold;
+    color: #000000;
+    background: linear-gradient(270deg, #cccccc 0%, #b0b0b0 35%, #464646 94%);
+    overflow: visible;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.custom-button-static:hover {
+    background: #3c8944;
+    color: #ffffff;
+    border: 5px solid #9be07c;
 }
 
 .glass-shine {

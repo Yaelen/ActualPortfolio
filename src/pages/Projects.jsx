@@ -1,5 +1,4 @@
 import React from "react";
-import "../index.css";
 
 export default function Projects() {
     const projects = [
@@ -35,14 +34,30 @@ export default function Projects() {
         },
     ];
 
+    const today = new Date().toLocaleDateString();
+
     return (
         <section id="projects" className="p-12 flex flex-col items-center gap-12">
+
+            {/* Construction banner */}
+            <div className="w-full max-w-5xl">
+                <div
+                    className="glass-shine border-4 border-black p-4 text-white shadow-2xl mb-6"
+                    style={{ borderRadius: '0 25px 0 25px' }}
+                >
+                    <p className="font-bold flex items-center gap-2 justify-center md:justify-start">
+                        <span role="img" aria-label="construction">🚧</span>
+                        Projects page is under construction. Content is being updated.
+                    </p>
+                    <p className="text-sm opacity-90 mt-1 text-center md:text-left">Last updated: {today}</p>
+                </div>
+            </div>
 
             <div className="flex flex-col w-full max-w-5xl gap-10">
                 {projects.map((p) => (
                     <div
                         key={p.title}
-                        className="glass-shine relative z-10 rounded-3xl border border-white/30 bg-white/20 backdrop-blur-lg shadow-xl
+                        className="glass-shine relative z-10 rounded-3xl bg-white/20 backdrop-blur-lg shadow-xl
                                    flex flex-col md:flex-row items-center md:items-stretch p-6
                                    transition-transform duration-300 hover:scale-[1.02]"
                     >
@@ -100,7 +115,7 @@ export default function Projects() {
                                 href={p.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="custom-button self-center md:self-start"
+                                className="custom-button-static self-center md:self-start"
                             >
                                 {p.type === "live" ? "View Website" : "View Code"}
                             </a>
