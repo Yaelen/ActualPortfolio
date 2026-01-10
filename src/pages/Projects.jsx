@@ -2,6 +2,17 @@ import React from "react";
 
 export default function Projects() {
     const projects = [
+        // template
+        // {
+        //     title: "",
+        //     image: "",
+        //     description:
+        //         "",
+        //     link: "",
+        //     tech: [""],
+        //     role: "",
+        //     type: "",
+        // },
         {
             title: "Hotspot App",
             image: "/src/assets/images/Hotspot.png",
@@ -10,7 +21,7 @@ export default function Projects() {
             link: "https://example.com/hotspot",
             tech: ["React Native", "Tailwind"],
             role: "Front-end developer & UI designer",
-            type: "code", // code only
+            type: "code",
         },
         {
             title: "Gaia Park",
@@ -20,7 +31,7 @@ export default function Projects() {
             link: "https://example.com/gaia",
             tech: ["React", "Tailwind"],
             role: "Front-end developer and content creator",
-            type: "live", // live website
+            type: "live",
         },
         {
             title: "CloudStrike",
@@ -32,9 +43,27 @@ export default function Projects() {
             role: "Full-stack developer",
             type: "code",
         },
+        {
+            title: "Open Hiring",
+            image: "",
+            description:
+                "A new way for business to fed and hire new employees",
+            link: "https://example.com/OpenHiring",
+            tech: [],
+            role: "",
+            type: "",
+        },
+        {
+            title: "Bird Landlord",
+            image: "",
+            description:
+                "",
+            link: "https://example.com/cloudstrike",
+            tech: [],
+            role: "",
+            type: "",
+        },
     ];
-
-    const today = new Date().toLocaleDateString();
 
     return (
         <section id="projects" className="p-12 flex flex-col items-center gap-12">
@@ -47,9 +76,8 @@ export default function Projects() {
                 >
                     <p className="font-bold flex items-center gap-2 justify-center md:justify-start">
                         <span role="img" aria-label="construction">🚧</span>
-                        Projects page is under construction. Content is being updated.
+                        Projects page is under construction. Content is being updated. Last updated
                     </p>
-                    <p className="text-sm opacity-90 mt-1 text-center md:text-left">Last updated: {today}</p>
                 </div>
             </div>
 
@@ -97,7 +125,7 @@ export default function Projects() {
                                 <p className="text-white text-sm">{p.role}</p>
                             </div>
 
-                            {/* Type badge */}
+
                             <div className="mb-3">
                                 {p.type === "live" ? (
                                     <span className="px-3 py-1 rounded-full bg-green-500 text-white font-semibold">
@@ -110,7 +138,6 @@ export default function Projects() {
                                 )}
                             </div>
 
-                            {/* Button changes text depending on type */}
                             <a
                                 href={p.link}
                                 target="_blank"
