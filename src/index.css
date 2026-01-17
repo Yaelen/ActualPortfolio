@@ -28,6 +28,17 @@
     src: url('./assets/fonts/KHTitle.woff2') format('woff2');
 }
 
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+.float-slow {
+    animation: float 6s ease-in-out infinite;
+}
+
+
 html, body {
     /*background-image: linear-gradient(90deg, #000000 20% , #363636 30%, #525252 60%), url('/src/assets/images/wall.jpg');*/
     background-size: cover;
@@ -121,30 +132,6 @@ html, body {
 .active-button::before {
     opacity: 1;
     left: -20px;
-}
-
-.custom-button-static {
-    position: static;
-    width: 20rem;
-    height: 4rem;
-    padding: 0 2rem;
-    border-radius: 0 25px 0 25px;
-    font-weight: bold;
-    color: #000000;
-    background: #646464;
-    overflow: visible;
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-
-.custom-button-static:hover {
-    background: #3c8944;
-    color: #ffffff;
-    border: 5px solid #9be07c;
 }
 
 .glass-shine {
