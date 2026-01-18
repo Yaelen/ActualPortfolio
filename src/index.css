@@ -40,7 +40,6 @@
 
 
 html, body {
-    /*background-image: linear-gradient(90deg, #000000 20% , #363636 30%, #525252 60%), url('/src/assets/images/wall.jpg');*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -1,10 +1,17 @@
 import React from "react";
+import GaiaImg from "../assets/images/Gaia.png";
+import OpenHiringImg from "../assets/images/OpenHiring.png";
+import WorkImg from "../assets/images/Work.png";
+import CloudsImg from "../assets/images/Clouds.png";
+import MadoImg from "../assets/images/Mado.png";
+import BirdImg from "../assets/images/Bird.png";
+
 
 export default function TProjects() {
     const projects = [
         {
             title: "Gaia Park",
-            image: "src/assets/images/Gaia.png",
+            image: GaiaImg,
             description:
                 "Gaia Park is an innovative environmental restoration concept where visitors use the Gaia Seed device to plant bio-engineered seeds and contribute to reforestation, blending technology with nature to promote sustainability.",
             link: "https://project.hosted.hr.nl/2024_2025/tle1_exp_t10/TLE-1-T10/",
@@ -14,7 +21,7 @@ export default function TProjects() {
         },
         {
             title: "Open Hiring",
-            image: "src/assets/images/OpenHiring.png",
+            image: OpenHiringImg,
             description:
                 "A website concept for Open Hiring that promotes fair job applications by keeping applicants anonymous and letting the first to sign up get the job. No bias, just opportunity.",
             link: "",
@@ -24,7 +31,7 @@ export default function TProjects() {
         },
         {
             title: "Gebaren Bij Intake",
-            image: "src/assets/images/Work.png",
+            image: WorkImg,
             description:
                 "A concept application for a digitalized version of a sign language workbook for practice and learning, focused on medical care with practice videos and a built-in dictionary.",
             link: "",
@@ -34,7 +41,7 @@ export default function TProjects() {
         },
         {
             title: "CloudStrike",
-            image: "src/assets/images/Clouds.png",
+            image: CloudsImg,
             description:
                 "A social media website for posting and sharing cloud photography, supported by a functional back-end.",
             link: "",
@@ -44,7 +51,7 @@ export default function TProjects() {
         },
         {
             title: "MadoRijschool",
-            image: "src/assets/images/Mado.png",
+            image: MadoImg,
             description:
                 "A concept for a driving school website focused on faster reservations and clearer access to essential UI features.",
             link: "",
@@ -54,7 +61,7 @@ export default function TProjects() {
         },
         {
             title: "Bird Landlord",
-            image: "src/assets/images/Bird.png",
+            image: BirdImg,
             description:
                 "A playful platform concept for managing birdhouse listings and their avian tenants.",
             link: "",
