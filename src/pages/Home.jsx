@@ -6,17 +6,12 @@ function Home() {
         "HTML",
         "CSS",
         "JavaScript",
-        "Blade",
         "React",
         "Tailwind",
     ];
 
     return (
         <section className="flex justify-center py-16 px-4">
-            <div className="p-6 bg-red-500 text-white">
-                Tailwind test
-            </div>
-
             <div
                 className="max-w-4xl w-full glass-shine border-4 border-black p-10 text-center float-slow"
                 style={{ borderRadius: "0 32px 0 32px" }}

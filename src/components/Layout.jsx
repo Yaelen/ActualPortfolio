@@ -4,7 +4,7 @@ import Navbar from "./Navbar.jsx";
 function Layout() {
     const location = useLocation();
     return (
-        <div className={"main-content flex  min-h-screen [cursor:url('./assets/images/custom-cursor.png')_16_16,auto]"}>
+        <div className={"main-content flex  min-h-screen"}>
             <section className="w-1/4 p-4 flex items-center justify-center">
                 <Navbar />
             </section>
