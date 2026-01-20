@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @tailwind utilities;
 
-
 @font-face {
     font-family: 'KhM';
     src: url('./assets/fonts/KHMenu.woff2') format('woff2');
@@ -35,7 +34,6 @@
 .float-slow {
     animation: float 6s ease-in-out infinite;
 }
-
 
 html, body {
     background-size: cover;

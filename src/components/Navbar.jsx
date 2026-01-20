@@ -4,7 +4,7 @@ import "../index.css";
 
 export default function Navbar() {
     return (
-        <nav className="fixed top-0 h-screen w-25 animate-fade-in z-50 flex items-center">
+        <nav className="fixed top-0 h-screen animate-fade-in z-50 flex items-center">
         <ul className="nav-bar flex flex-col gap-4 p-4">
                 <li>
                     <NavLink
